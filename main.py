@@ -15,6 +15,8 @@ key_file = 'key.pem'
 # Here we generate key for encryption
 key = Fernet.generate_key()
 cipher_suite = Fernet(key)
+print(cipher_suite)
+# the upper part can be ignored
 
 @app.route('/')
 def index():
